@@ -1,17 +1,16 @@
-import type { Metadata } from "next";
 import "./globals.css";
 
 export default function RootLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode;
-  
-}>) {
+}) {
+
   return (
-    <html lang="kr">
+    <html lang="ko">
       <body>
+        {children}
       </body>
-      {children}
     </html>
   );
 }
